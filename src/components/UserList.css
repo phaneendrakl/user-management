@@ -1,0 +1,96 @@
+/* User List*/
+
+.users-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 60%;
+}
+
+@media screen and (max-width: 500px) {
+  .users-container {
+    width: 100%;
+  }
+}
+
+.users-container>div:nth-child(odd) {
+  background-color: rgb(236, 234, 234);
+}
+
+.users-container>div:nth-child(even) {
+  background-color: azure;
+}
+
+.users-head {
+  padding: 15px;
+  margin: 0 !important;
+  background-color: rgb(124, 235, 198) !important;
+}
+
+.users-block {
+  width: 100%;
+  padding: 15px;
+  margin: 0 !important;
+}
+
+.users-name {
+  font-size: 18px;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 500;
+  color: rgb(2, 75, 72);
+
+}
+
+/* Modal Form*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+@media screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.modal-content>form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content .modal-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  line-height: 20px;
+  text-align: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover {
+  cursor: pointer;
+}
